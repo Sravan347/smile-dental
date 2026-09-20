@@ -17,7 +17,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-[rgba(247,245,239,0.82)] shadow-[0_1px_0_rgba(23,58,45,0.08)] backdrop-blur-md" : "bg-transparent"}`}
+      className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-[rgba(248,250,250,0.9)] shadow-[0_1px_0_rgba(16,42,46,0.08)] backdrop-blur-md" : "bg-transparent"}`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 xl:px-0">
         <Link
@@ -25,10 +25,10 @@ export function Navbar() {
           className="flex items-center gap-3"
           aria-label="Smile Dental Clinic home"
         >
-          <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-(--forest) bg-(--forest) text-sm font-semibold text-white">
+          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-(--forest) text-sm font-semibold text-white">
             S
           </span>
-          <span className="font-serif text-2xl leading-none text-foreground">
+          <span className="font-serif text-xl leading-none text-foreground sm:text-2xl">
             {clinic.name}
           </span>
         </Link>
@@ -50,14 +50,14 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="tel:+910000000000"
+            href={`tel:${clinic.phone}`}
             className="text-sm font-medium text-foreground hover:text-(--forest)"
           >
             Call
           </a>
           <Link
             href="/appointment"
-            className="inline-flex items-center rounded-full bg-(--forest) px-5 py-3 text-sm font-medium text-white transition hover:bg-(--forest-deep)"
+            className="inline-flex items-center rounded-lg bg-(--forest) px-5 py-3 text-sm font-semibold text-white transition hover:bg-(--forest-deep)"
           >
             Book an Appointment
           </Link>
@@ -94,19 +94,19 @@ export function Navbar() {
             <div className="mt-4 flex flex-col gap-3 pt-4 border-t border-(--border)">
               <Link
                 href="/appointment"
-                className="rounded-full bg-(--forest) px-5 py-3 text-center text-sm font-medium text-white"
+                className="rounded-lg bg-(--forest) px-5 py-3 text-center text-sm font-semibold text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Book Appointment
               </Link>
               <a
-                href="tel:+910000000000"
+                href={`tel:${clinic.phone}`}
                 className="rounded-full border border-(--border) px-5 py-3 text-center text-sm font-medium text-foreground"
               >
                 Call
               </a>
               <a
-                href="https://wa.me/910000000000"
+                href={`https://wa.me/${clinic.whatsapp.replace(/\D/g, "")}`}
                 className="rounded-full border border-(--border) px-5 py-3 text-center text-sm font-medium text-foreground"
               >
                 WhatsApp

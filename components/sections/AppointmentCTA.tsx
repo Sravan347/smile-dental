@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { clinic } from "@/data/clinic";
 
 export function AppointmentCTA() {
   return (
@@ -19,13 +20,13 @@ export function AppointmentCTA() {
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link
               href="/appointment"
-              className="inline-flex items-center justify-center rounded-full bg-(--white) px-6 py-3 text-sm font-medium text-(--forest)"
+              className="inline-flex items-center justify-center rounded-lg bg-(--white) px-6 py-3 text-sm font-semibold text-(--forest)"
             >
               Book an Appointment
             </Link>
             <a
-              href="tel:+910000000000"
-              className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-medium text-white"
+              href={`tel:${clinic.phone}`}
+              className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 text-sm font-semibold text-white"
             >
               Call the Clinic
             </a>

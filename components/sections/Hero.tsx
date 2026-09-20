@@ -1,50 +1,69 @@
 import Image from "next/image";
 import Link from "next/link";
+import { clinic } from "@/data/clinic";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-background">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(181,154,98,0.14),_transparent_34%),radial-gradient(circle_at_bottom_right,_rgba(23,58,45,0.08),_transparent_30%)]" />
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 pb-16 pt-10 md:px-8 md:pb-20 md:pt-14 xl:px-0 xl:grid-cols-[1.1fr_0.9fr] xl:items-center xl:gap-14 xl:pb-24">
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(230,244,242,0.8),transparent_48%),linear-gradient(315deg,rgba(201,169,110,0.08),transparent_40%)]" />
+      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 pb-16 pt-10 md:px-8 md:pb-24 md:pt-16 xl:grid-cols-[1.02fr_0.98fr] xl:items-center xl:gap-16 xl:px-0 xl:pb-28">
         <div className="max-w-xl">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-(--forest)">
-            ESTABLISHED DENTAL CARE · PATHANAMTHITTA
+          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-(--forest)">
+            PATIENT-FIRST DENTAL CARE · PATHANAMTHITTA
           </p>
-          <h1 className="mt-6 font-serif text-5xl leading-[0.9] text-foreground md:text-7xl">
+          <h1 className="mt-6 max-w-2xl font-serif text-5xl leading-[0.96] text-foreground md:text-7xl">
             A healthier smile, thoughtfully cared for.
           </h1>
           <p className="mt-6 max-w-lg text-base leading-8 text-(--muted) md:text-lg">
-            Comprehensive dental care delivered with experience, attention and a
-            patient-first approach.
+            Calm, clear and comprehensive dental care for individuals and
+            families, from routine check-ups to restorative treatment planning.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Link
               href="/appointment"
-              className="inline-flex items-center justify-center rounded-full bg-(--forest) px-7 py-3.5 text-sm font-medium text-white transition hover:bg-(--forest-deep)"
+              className="inline-flex items-center justify-center rounded-lg bg-(--forest) px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-(--forest-deep)"
             >
               Book an Appointment
             </Link>
-            <Link
-              href="/treatments"
-              className="inline-flex items-center justify-center rounded-full border border-(--border) bg-white px-7 py-3.5 text-sm font-medium text-foreground transition hover:border-(--forest) hover:text-(--forest)"
+            <a
+              href={`tel:${clinic.phone}`}
+              className="inline-flex items-center justify-center rounded-lg border border-(--border) bg-white px-7 py-3.5 text-sm font-semibold text-foreground transition hover:border-(--forest) hover:text-(--forest)"
             >
-              Explore Treatments
-            </Link>
+              Call the clinic
+            </a>
+          </div>
+          <div className="mt-8 grid max-w-lg grid-cols-3 gap-4 border-t border-(--border) pt-6">
+            <div>
+              <p className="text-lg font-semibold text-foreground">Clear</p>
+              <p className="mt-1 text-xs leading-5 text-(--muted)">
+                Treatment plans explained simply
+              </p>
+            </div>
+            <div>
+              <p className="text-lg font-semibold text-foreground">Calm</p>
+              <p className="mt-1 text-xs leading-5 text-(--muted)">
+                Comfort considered at every step
+              </p>
+            </div>
+            <div>
+              <p className="text-lg font-semibold text-foreground">Local</p>
+              <p className="mt-1 text-xs leading-5 text-(--muted)">
+                Conveniently based in Pathanamthitta
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="relative">
-          <div className="absolute -left-8 top-8 hidden h-24 w-24 rounded-full border border-[var(--gold)]/60 bg-(--gold)/10 md:block" />
-          <div className="absolute -right-4 bottom-8 hidden h-20 w-20 rounded-full border border-(--forest)/30 bg-(--forest)/10 md:block" />
-          <div className="overflow-hidden rounded-[2rem] border border-(--border) bg-(--white) p-3 shadow-[0_20px_60px_rgba(23,58,45,0.08)]">
-            <div className="overflow-hidden rounded-[1.5rem]">
+          <div className="overflow-hidden rounded-2xl border border-(--border) bg-(--white) p-2 shadow-[0_24px_70px_rgba(16,42,46,0.12)]">
+            <div className="overflow-hidden rounded-xl">
               <Image
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80"
                 alt="Modern dental clinic consultation"
                 width={900}
                 height={1100}
                 priority
-                className="h-[520px] w-full object-cover md:h-[700px]"
+                className="h-[460px] w-full object-cover md:h-[620px]"
               />
             </div>
           </div>
