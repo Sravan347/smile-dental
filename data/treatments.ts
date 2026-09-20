@@ -232,7 +232,7 @@ export const treatments: Treatment[] = [
     description:
       "Preventive dental care emphasizes guidance, regular review and proactive planning to support ongoing oral health.",
     image:
-      "https://images.unsplash.com/photo-1551606505-0c9c6a6b6331?auto=format&fit=crop&w=1200&q=80",
+      "/clinic-interior.svg",
     whatIsIt: [
       "Preventive care is built around regular review, homecare guidance and early detection.",
       "It supports overall oral health and can reduce the need for more complex care later.",

@@ -105,3 +105,51 @@ textarea {
 .safe-area-bottom {
   padding-bottom: max(0.625rem, env(safe-area-inset-bottom));
 }
+
+.landing-orbit {
+  position: absolute;
+  border: 1px solid rgb(71 107 94 / 20%);
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+.landing-orbit-one {
+  width: min(82vw, 73rem);
+  height: min(82vw, 73rem);
+  right: -27rem;
+  top: -19rem;
+  animation: slow-drift 14s ease-in-out infinite alternate;
+}
+
+.landing-orbit-two {
+  width: min(62vw, 54rem);
+  height: min(62vw, 54rem);
+  right: -16rem;
+  top: -8rem;
+  animation: slow-drift 18s ease-in-out infinite alternate-reverse;
+}
+
+.landing-enter {
+  animation: rise-in 700ms cubic-bezier(.2,.75,.25,1) both;
+}
+
+.landing-enter-delay-1 { animation-delay: 90ms; }
+.landing-enter-delay-2 { animation-delay: 180ms; }
+.landing-enter-delay-3 { animation-delay: 270ms; }
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slow-drift {
+  from { transform: translate3d(-1.5%, -1%, 0) rotate(-3deg); }
+  to { transform: translate3d(2%, 2%, 0) rotate(3deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-orbit,
+  .landing-enter {
+    animation: none;
+  }
+}
