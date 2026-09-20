@@ -5,10 +5,12 @@ export type ContactField = {
 };
 
 export const clinic = {
-  name: "Smile Dental Clinic",
-  tagline: "Comprehensive dental care in Pathanamthitta, Kerala",
-  locationLabel: "Aban Junction / Aban Arcade, Pathanamthitta, Kerala",
-  fullAddress: "Aban Junction / Aban Arcade, Pathanamthitta, Kerala, India",
+  name: "Plavilayil Dental Clinic & Orthodontic Speciality Centre",
+  shortName: "Plavilayil Dental",
+  tagline: "Dental & orthodontic care in Adoor, Kerala",
+  locationLabel: "Opp. Nayanam Theatre, Central Junction, SH 1, Adoor",
+  fullAddress:
+    "Opp. Nayanam Theatre, Central Junction, SH 1, Adoor, Pathanamthitta – 691523, Kerala, India",
   phone: "+91 00000 00000",
   phoneDisplay: "+91 00000 00000",
   whatsapp: "+91 00000 00000",
@@ -16,9 +18,9 @@ export const clinic = {
   email: "hello@smiledentalclinic.in",
   website: "https://smiledentalclinic.in",
   googleMaps:
-    "https://maps.google.com/?q=Smile+Dental+Clinic+Pathanamthitta+Kerala",
-  latitude: 9.264,
-  longitude: 76.781,
+    "https://maps.google.com/?q=Opp.+Nayanam+Theatre,+Central+Junction,+SH+1,+Adoor,+Pathanamthitta+691523",
+  latitude: 9.155,
+  longitude: 76.731,
   openingHours: [
     { day: "Monday - Saturday", hours: "9:00 AM - 1:00 PM, 4:00 PM - 8:00 PM" },
     { day: "Sunday", hours: "[VERIFY]" },
@@ -27,7 +29,7 @@ export const clinic = {
     instagram: "https://instagram.com",
     facebook: "https://facebook.com",
     googleReviews:
-      "https://maps.google.com/?q=Smile+Dental+Clinic+Pathanamthitta+Kerala",
+      "https://maps.google.com/?q=Opp.+Nayanam+Theatre,+Central+Junction,+SH+1,+Adoor,+Pathanamthitta+691523",
   },
   reviewPrompt: "Reviews will be published once verified by the clinic.",
 } as const;
@@ -42,10 +44,10 @@ export const navItems = [
 ] as const;
 
 export const trustHighlights = [
-  { label: "EST. 2004", value: "[VERIFY]" },
-  { label: "MULTI-SPECIALTY", value: "[VERIFY]" },
-  { label: "PATHANAMTHITTA", value: "[VERIFY]" },
-  { label: "250+ PATIENT REVIEWS", value: "[VERIFY]" },
+  { label: "ADOOR", value: "LOCAL CARE" },
+  { label: "ORTHODONTICS", value: "SPECIALIST FOCUS" },
+  { label: "PATIENT-FIRST", value: "THOUGHTFUL CARE" },
+  { label: "CENTRAL JUNCTION", value: "EASY TO FIND" },
 ] as const;
 
 export const contactDetails: ContactField[] = [

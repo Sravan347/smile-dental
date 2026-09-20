@@ -9,14 +9,13 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-sm font-semibold">
-              S
+              P
             </span>
-            <span className="font-serif text-2xl">{clinic.name}</span>
+            <span className="font-serif text-2xl">{clinic.shortName}</span>
           </div>
           <p className="mt-5 max-w-xs text-sm leading-7 text-[rgba(255,255,255,0.7)]">
-            Thoughtful dental care for families and individuals in
-            Pathanamthitta, with a patient-first approach and modern clinical
-            experience.
+            A considered approach to everyday dental care and orthodontic
+            journeys in the heart of Adoor.
           </p>
         </div>
 

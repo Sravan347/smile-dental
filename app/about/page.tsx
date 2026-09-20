@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const metadata = buildMetadata({
   title: "About",
-  description: `Learn more about ${clinic.name}, a patient-first dental clinic in Pathanamthitta, Kerala.`,
+  description: `Learn more about ${clinic.name}, a patient-first dental clinic in Adoor, Kerala.`,
   path: "/about",
 });
 

@@ -10,8 +10,8 @@
   --muted: #526568;
   --white: #ffffff;
   --border: #dde7e6;
-  --body-font: var(--font-body);
-  --display-font: var(--font-display);
+  --body-font: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  --display-font: Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif;
 }
 
 @theme inline {

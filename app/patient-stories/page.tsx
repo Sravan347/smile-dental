@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata = buildMetadata({
   title: "Patient Stories",
   description:
-    "Read verified patient experiences and stories for Smile Dental Clinic in Pathanamthitta.",
+    "Read verified patient experiences and stories for Plavilayil Dental Clinic in Adoor.",
   path: "/patient-stories",
 });
 

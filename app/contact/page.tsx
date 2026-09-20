@@ -3,7 +3,7 @@ import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
   title: "Contact",
-  description: `Contact ${clinic.name} in Pathanamthitta, Kerala for appointments, treatment enquiries and clinic information.`,
+  description: `Contact ${clinic.name} in Adoor, Kerala for appointments, treatment enquiries and clinic information.`,
   path: "/contact",
 });
 
@@ -60,8 +60,8 @@ export default function ContactPage() {
 
         <div className="overflow-hidden rounded-[2rem] border border-(--border) bg-(--white) p-3">
           <iframe
-            title="Smile Dental Clinic map"
-            src="https://www.google.com/maps?q=Pathanamthitta%20Kerala&output=embed"
+            title="Plavilayil Dental Clinic map"
+            src="https://www.google.com/maps?q=Opp.%20Nayanam%20Theatre,%20Central%20Junction,%20SH%201,%20Adoor,%20Pathanamthitta%20691523&output=embed"
             className="h-[460px] w-full rounded-[1.5rem] border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

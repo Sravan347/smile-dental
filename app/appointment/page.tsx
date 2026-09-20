@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata = buildMetadata({
   title: "Book an Appointment",
   description:
-    "Request an appointment with Smile Dental Clinic in Pathanamthitta, Kerala.",
+    "Request an appointment with Plavilayil Dental Clinic in Adoor, Kerala.",
   path: "/appointment",
 });
 

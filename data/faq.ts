@@ -1,8 +1,8 @@
 export const faqItems = [
   {
-    question: "Where is Smile Dental Clinic located?",
+    question: "Where is Plavilayil Dental Clinic located?",
     answer:
-      "Smile Dental Clinic is located at Aban Junction / Aban Arcade in Pathanamthitta, Kerala. Please confirm the exact route or visit details before your appointment.",
+      "Plavilayil Dental Clinic & Orthodontic Speciality Centre is opposite Nayanam Theatre at Central Junction on SH 1, Adoor, Pathanamthitta – 691523.",
   },
   {
     question: "How can I book an appointment?",
