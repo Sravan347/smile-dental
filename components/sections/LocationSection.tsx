@@ -9,7 +9,7 @@ export function LocationSection() {
             Location
           </p>
           <h2 className="mt-4 font-serif text-4xl leading-none text-foreground md:text-6xl">
-            Smile Dental Clinic
+            Find us in Adoor.
           </h2>
           <div className="mt-8 space-y-4 text-base leading-8 text-(--muted)">
             <p>{clinic.locationLabel}</p>
@@ -62,8 +62,8 @@ export function LocationSection() {
 
         <div className="overflow-hidden rounded-[2rem] border border-(--border) bg-(--white) p-3">
           <iframe
-            title="Smile Dental Clinic map"
-            src="https://www.google.com/maps?q=Pathanamthitta%20Kerala&output=embed"
+            title="Plavilayil Dental Clinic map"
+            src="https://www.google.com/maps?q=Opp.%20Nayanam%20Theatre,%20Central%20Junction,%20SH%201,%20Adoor,%20Pathanamthitta%20691523&output=embed"
             className="h-[420px] w-full rounded-[1.5rem] border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

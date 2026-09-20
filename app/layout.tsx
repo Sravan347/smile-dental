@@ -1,36 +1,23 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Manrope } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MobileActionBar } from "@/components/layout/MobileActionBar";
 import { clinic } from "@/data/clinic";
 
-const dmSerifDisplay = DM_Serif_Display({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const manrope = Manrope({
-  variable: "--font-body",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL(clinic.website),
   title: {
-    default: `${clinic.name} | Dental Clinic in Pathanamthitta, Kerala`,
+    default: `${clinic.name} | Dental & Orthodontic Care in Adoor`,
     template: `%s | ${clinic.name}`,
   },
   description:
-    "Smile Dental Clinic provides comprehensive dental care in Pathanamthitta, Kerala. Explore treatments, meet the dental team and book an appointment.",
+    "Plavilayil Dental Clinic & Orthodontic Speciality Centre provides thoughtful dental care in Adoor, Kerala.",
   alternates: { canonical: clinic.website },
   openGraph: {
-    title: `${clinic.name} | Dental Clinic in Pathanamthitta, Kerala`,
+    title: `${clinic.name} | Dental & Orthodontic Care in Adoor`,
     description:
-      "Smile Dental Clinic provides comprehensive dental care in Pathanamthitta, Kerala. Explore treatments, meet the dental team and book an appointment.",
+      "Plavilayil Dental Clinic & Orthodontic Speciality Centre provides thoughtful dental care in Adoor, Kerala.",
     url: clinic.website,
     siteName: clinic.name,
     locale: "en_IN",
@@ -38,9 +25,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${clinic.name} | Dental Clinic in Pathanamthitta, Kerala`,
+    title: `${clinic.name} | Dental & Orthodontic Care in Adoor`,
     description:
-      "Smile Dental Clinic provides comprehensive dental care in Pathanamthitta, Kerala. Explore treatments, meet the dental team and book an appointment.",
+      "Plavilayil Dental Clinic & Orthodontic Speciality Centre provides thoughtful dental care in Adoor, Kerala.",
   },
   icons: {
     icon: "/favicon.svg",
@@ -56,7 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSerifDisplay.variable} ${manrope.variable}`}
+      className=""
     >
       <body className="min-h-screen bg-background text-foreground antialiased">
         <Navbar />

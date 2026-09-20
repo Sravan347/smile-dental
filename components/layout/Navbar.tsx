@@ -23,13 +23,13 @@ export function Navbar() {
         <Link
           href="/"
           className="flex items-center gap-3"
-          aria-label="Smile Dental Clinic home"
+          aria-label="Plavilayil Dental Clinic home"
         >
           <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-(--forest) text-sm font-semibold text-white">
-            S
+            P
           </span>
           <span className="font-serif text-xl leading-none text-foreground sm:text-2xl">
-            {clinic.name}
+            {clinic.shortName}
           </span>
         </Link>
 
